@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Avenir Next';
+    src: url("/fonts/Metropolis-Light.otf");
+}
+
+body {
+    font-family: "Avenir Next";
+}
+
+.jumbotron {
+    background-color: aliceblue;
+}
+
+#map {
+    width: fit-content;
+    height: 90vh;
+    margin-bottom: 20px;
+}
+
+.form-check {
+    padding-bottom: 10px;
+}
+
+.form-check-label {
+    line-height: normal;
+}
+
+#legend {
+    padding-top: 20px;
+}
