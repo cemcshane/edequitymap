@@ -1,4 +1,4 @@
-var map = L.map('map').setView([38.6270, -90.1994], 9);
+var map = L.map('map').setView([38.5828, -90.6629], 9);
 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
@@ -89,12 +89,12 @@ d3.csv('../data/District_Properties.csv').then(function(properties) {
                      <div>
                         <svg id="lollipop-chart-${feature_num}" width="270" height="210"></svg>
                      </div>
-                     <div class="col-12 stats">Total students: <span id="num_students_display"></span></div>
+                     <div class="col-12 stats"><strong>Total students:</strong> <span id="num_students_display"></span></div>
                   </div>
                   <div class="row">
-                     <div class="col-12">Students on Free Reduced Lunch: <span id="perc_frl_display"></span>%</div>
-                     <div class="col-12">Students College-bound: <span id="perc_college_display"></span>%</div>
-                     <div class="col-12">Average Expenditures Per Student: $<span id="spending_per_stud_display"></span></div>
+                     <div class="col-12"><strong>Students on Free Reduced Lunch:</strong> <span id="perc_frl_display"></span>%</div>
+                     <div class="col-12"><strong>Students College-bound:</strong> <span id="perc_college_display"></span>%</div>
+                     <div class="col-12"><strong>Average Expenditures Per Student:</strong> $<span id="spending_per_stud_display"></span></div>
                   </div>
                </div>
             `);
