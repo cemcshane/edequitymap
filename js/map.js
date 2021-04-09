@@ -13,7 +13,7 @@ function numberWithCommas(x) {
    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
-d3.csv('/../data/District_Properties.csv').then(function(properties) {
+d3.csv('../data/District_Properties.csv').then(function(properties) {
    const propertyScales = new Map([
       ['perc_frl', [[0,100], ['#ffffe6', '#ffd4b2', '#ffa77e', '#ff7248', '#ff0000']]],
       ['perc_college', [[0,100], ['#ffffe6', '#ffd4b2', '#ffa77e', '#ff7248', '#ff0000']]],
@@ -72,7 +72,7 @@ d3.csv('/../data/District_Properties.csv').then(function(properties) {
 
    const district_properties = new Map(properties.map( d => [d.DISTRICT_N, d] ));
 
-   $.getJSON('/../data/School_Districts.json', function(geoData) {
+   $.getJSON('../data/School_Districts.json', function(geoData) {
       L.geoJson(geoData, {
          onEachFeature: function(feature, layer) {   
             data = district_properties.get(feature.properties.DISTRICT_N);
