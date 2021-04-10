@@ -78,7 +78,7 @@ d3.csv('data/District_Properties.csv').then(function(properties) {
             data = district_properties.get(feature.properties.DISTRICT_N);
 
             let popup = $(`
-               <div style="font-family: "Avenir Next";" class="container">
+               <div style="font-family: 'Montserrat', sans-serif;" class="container">
                   <div class="row justify-content-center">
                      <h5>District</h5>
                   </div>

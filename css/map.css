@@ -1,10 +1,5 @@
-@font-face {
-    font-family: 'Avenir Next';
-    src: url("https://blogfonts.com/css/aWQ9MTc2OSZzdWI9NzY5JmM9bSZ0dGY9bWV0cm9wb2xpcy5saWdodC5vdGYmbj1tZXRyb3BvbGlzLWxpZ2h0LTQ/Metropolis Light.otf");
-}
-
 body {
-    font-family: "Avenir Next";
+    font-family: 'Montserrat', sans-serif;
 }
 
 .jumbotron {
