@@ -1,25 +1,33 @@
+// Create map centered on given coordinates and default zoom of 9
 var map = L.map('map').setView([38.5828, -90.6629], 9);
 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
+// Set minimum and maximum possible zoom values
 map.options.minZoom = 9;
 map.options.maxZoom = 15;
 
+// Set defaults for keeping track of clicked districts
 let clicked = false;
 let clickedLayer = null;
 
+// Function for formatting numbers
 function numberWithCommas(x) {
    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
+// Load in properties for each district
 d3.csv('data/District_Properties.csv').then(function(properties) {
+   // Set max and min values for color scale and include array of colors to be used
+   // (the array of colors can be any length)
    const propertyScales = new Map([
       ['perc_frl', [[0,100], ['#ffffe6', '#ffd4b2', '#ffa77e', '#ff7248', '#ff0000']]],
       ['perc_college', [[0,100], ['#ffffe6', '#ffd4b2', '#ffa77e', '#ff7248', '#ff0000']]],
       ['spending_per_stud', [[null, null], ['#ffffe6', '#ffd4b2', '#ffa77e', '#ff7248', '#ff0000']]]
    ]);
 
+   // Map demographics to their IDs from the .csv file
    const demographicToId = new Map([
       ['White', 'perc_white'],
       ['Mixed Race', 'perc_multi'],
@@ -30,6 +38,7 @@ d3.csv('data/District_Properties.csv').then(function(properties) {
       ['Native American', 'perc_na']
    ]);
 
+   // Function to obtain color scale for given property
    getColorScale = function(property) {
       domain = propertyScales.get(property)[0];
       range = propertyScales.get(property)[1];
@@ -47,8 +56,10 @@ d3.csv('data/District_Properties.csv').then(function(properties) {
                .domain(domain)
                .range(range);
    }
+   // Set default color scale to percent of students on free reduced lunch
    colorScale = getColorScale('perc_frl');
 
+   // Create legend that corresponds to given property
    setLegend = function(property) {
       range = propertyScales.get(property)[1];
       legend = d3.select('#legend')
@@ -68,15 +79,22 @@ d3.csv('data/District_Properties.csv').then(function(properties) {
       });
    }
 
+   // Keep count of the different districts to give their demographic charts unique IDs
    let feature_num = 1;
 
+   // Map each district name to their respective properties
    const district_properties = new Map(properties.map( d => [d.DISTRICT_N, d] ));
 
+   // Load in the school district GeoJSON
    $.getJSON('data/School_Districts.json', function(geoData) {
+      // Import GeoJSON into map
       L.geoJson(geoData, {
+         // Perform the following on each school district
          onEachFeature: function(feature, layer) {   
+            // Get data for the given school district
             data = district_properties.get(feature.properties.DISTRICT_N);
 
+            // Set up template popup to be populated with school district info
             let popup = $(`
                <div style="font-family: 'Montserrat', sans-serif;" class="container">
                   <div class="row justify-content-center">
@@ -99,6 +117,7 @@ d3.csv('data/District_Properties.csv').then(function(properties) {
                </div>
             `);
 
+            // Add accredidation status
             $(popup).find('#accred_status_display').text(data.accred_status);
             if(data.accred_status=="Accredited") {
                $(popup).find('#accred_status_display').css("color", "green");
@@ -107,6 +126,7 @@ d3.csv('data/District_Properties.csv').then(function(properties) {
                $(popup).find('#accred_status_display').css("color", "#f2a846");
             }
 
+            // Set up demographic chart
             let chart = d3.select(popup.get(0)).select(`#lollipop-chart-${feature_num}`);
 
             let xScale = d3.scaleLinear()
@@ -127,7 +147,7 @@ d3.csv('data/District_Properties.csv').then(function(properties) {
                .attr("x", 165)
                .attr("y", 195);
 
-            let yScaleDomain = ["White", "Mixed Race", "Hispanic", "Pacific Islander", "Black", "Asian", "Native American"]
+            let yScaleDomain = ["White", "Mixed Race", "Hispanic", "Pacific Islander", "Black", "Asian", "Native American"];
             yScaleDomain = yScaleDomain.filter(dem => data[demographicToId.get(dem)]!='');
             var yScale = d3.scaleBand()
                .range([0, 150])
@@ -170,9 +190,8 @@ d3.csv('data/District_Properties.csv').then(function(properties) {
                   .attr("y", function(d) { return yScale(d)+13.5; });               
 
 
-
+            // Add property data to popup
             $(popup).find('#num_students_display').text(numberWithCommas(data.num_students));
-
             $(popup).find('h5').text(data.DISTRICT_N);
             $(popup).find('#perc_frl_display').text(data.perc_frl);
             $(popup).find('#perc_college_display').text(data.perc_college);
@@ -183,36 +202,31 @@ d3.csv('data/District_Properties.csv').then(function(properties) {
             layer.bindPopup(popup.html());
             layer.off("click");
 
+            // Add event listeners for hover and click
             layer.on('mouseover', function() {
-               // layer.setStyle({fillOpacity: 0.95});
                layer.setStyle({weight: 7});
             });
             layer.on('mouseout', function() {
                if(layer!=clickedLayer) {
-                  // layer.setStyle({fillOpacity: 0.7});
                   layer.setStyle({weight: 3});
                }
             });
 
             layer.on('click', function() {
                if(layer == clickedLayer) {
-                  // layer.setStyle({fillOpacity: 0.7});
                   layer.setStyle({weight: 3});
                   clicked = false;
                   clickedLayer = null;
                   layer.closePopup();
                }
                else if (clicked) {
-                  // clickedLayer.setStyle({fillOpacity: 0.7});
                   clickedLayer.setStyle({weight: 3});
-                  // layer.setStyle({fillOpacity: 0.95});
                   layer.setStyle({weight: 7});
                   layer.openPopup();
                   clickedLayer.closePopup();               
                   clickedLayer = layer;
                }
                else {
-                  // layer.setStyle({fillOpacity: 0.95});
                   layer.setStyle({weight: 7});
                   clickedLayer = layer;
                   clicked = true;
@@ -235,6 +249,7 @@ d3.csv('data/District_Properties.csv').then(function(properties) {
 
       d3.selectAll('.leaflet-interactive').data(properties);
 
+      // Have form change color scale displayed on map
       $('.form-check').click(function() { 
          indicator = $('.form-check input:radio:checked').attr('id');
          colorScale = getColorScale(indicator);
