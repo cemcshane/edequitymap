@@ -1,56 +1,56 @@
-DISTRICT_N,accred_status,perc_frl,perc_college,spending_per_stud,num_students,perc_na,perc_asian,perc_black,perc_pi,perc_hisp,perc_multi,perc_white
-Affton 101,Accredited,33.6,45,10671,2587,,2.9,9.3,,6.3,7.9,73.6
-Bayless,Accredited,62.3,30.8,10394,1715,,12.5,12.2,,5.2,4.4,65.7
-Brentwood,Accredited,23.9,67.7,19111,768,,6.6,17.7,,5.3,8.3,61.8
-Clayton,Accredited,9.3,76.7,18343,2618,,12.9,14.7,,4.4,6.9,61
-Crystal City 47,Accredited,43.7,19,10122,496,,1.4,8.3,,1.6,,88.3
-Desoto 73,Accredited,45.5,22.2,9429,2587,0.2,,1.7,,1.4,0.9,95.6
-Dunklin R-V,Accredited,49.8,12,11374,1481,,1.1,3.1,,2.5,3.5,89.5
-Elsberry R-II,Accredited,48.5,45.5,9564,787,,,2.7,,3.8,4.1,88.8
-Ferguson Florissant R-II,Accredited,100,26.5,13144,9473,0.1,0.2,83,,3.6,5,8.1
-Festus R-VI,Accredited,35.9,28.6,9085,3096,0.2,0.8,3.1,,1.3,6.9,87.7
-Fort Zumwalt R-II,Accredited,19.9,48.8,11801,17518,0.1,3.6,6.3,0.1,5.9,5.7,78.2
-Fox C-6,Accredited,28.8,31.8,9249,11150,0.1,1.2,1.4,0.1,3.1,3.2,90.8
-Francis Howell R-III,Accredited,16.1,51.9,11463,16756,0.2,4.1,6.9,0.1,4.7,4.6,79.4
-Franklin County R-II,Accredited,30.5,0,12114,119,,,,,,,95
-Grandview R-II,Accredited,45.2,17,11281,4101,0.3,0.7,50.5,,23.2,5.1,20.1
-Hancock Place,Accredited,99.9,25,11718,1412,,1.3,22.1,,7,10.4,58.9
-Hazelwood R-I,Accredited,65.2,33.2,11007,16589,0.2,0.9,80.1,0.2,2.2,2,14.3
-Hillsboro R-III,Accredited,33.4,25.4,9269,3428,0.3,0.3,0.4,,2.1,1.5,95.4
-Jefferson County R-VII,Accredited,29.1,37.1,11138,129,,,,,,,100
-Jennings,Accredited,100,29.7,10689,2429,,,98.8,,0.5,,0.3
-Kirkwood R-VII,Accredited,11,67.6,11148,5864,0.1,1.7,9.3,,4.4,5.3,79.1
-Ladue,Accredited,10,80.4,13361,4236,0.1,16.8,15,,5.1,6.8,56.2
-Lindbergh R-VIII,Accredited,13.1,58.4,9576,7085,,4.3,2.2,,4.3,4.2,84.8
-Lonedell R-XIV,Accredited,44.9,0,10192,283,,,3.2,,,3.5,93.3
-Maplewood-Richmond Heights,Accredited,32.5,52,12785,1438,,1.8,17.6,,5.4,10.8,64.2
-Mehlville R-IX,Accredited,27.2,40.4,9592,9963,0.2,3.8,7.7,0.2,3.8,4,80.3
-Meramec Valley R-III,Accredited,48.5,32.7,10952,2909,0.5,0.6,1.6,,4.1,3.5,89.6
-New Haven,Accredited,36.3,26.1,9934,489,,,,,4.1,3.9,91.8
-Normandy,Provisionally Accredited,98.8,23.8,13713,2987,0.2,,93,,2.5,2.5,1.7
-Northwest R-I,Accredited,39.6,24.3,9855,6030,0.2,0.6,1.1,0.1,3.3,3.1,91.6
-Orchard Farm R-V,Accredited,32,38.2,12841,1942,0.3,1,8,,7.7,4.7,78.2
-Parkway C-2,Accredited,18.5,67.9,12490,17525,0.3,13.3,15.7,0,5.3,5.8,59.6
-Pattonville R-III,Accredited,45.7,43.1,14040,6007,0.2,3.9,32.6,0.1,13.3,8.3,41.5
-Ritenour,Accredited,20.8,23.2,9690,6375,0.2,1.6,41,0.1,22.8,8.5,25.8
-Riverview Gardens,Provisionally Accredited,99.9,11.4,9207,5414,,0.3,97.5,,1.1,,1
-Rockwood R-VI,Accredited,13.3,73.4,10509,20998,0.2,9,7.9,0.1,3.7,3.4,75.7
-Silex R-I,Accredited,35.8,34.4,8342,422,,,,,,1.4,97.2
-Spring Bluff R-XV,Accredited,21.9,0,9754,196,,,,,,,98
-Saint Charles R-VI,Accredited,39.2,40.3,14499,4742,0.1,2,13.5,0.1,10.3,5.4,68.6
-Saint Clair R-XIII,Accredited,49.6,20.8,9869,2107,0.2,,1.2,,0.8,4.3,93.3
-Saint Louis City,Accredited,100,32,15562,19222,0.1,2.8,78.5,,5.7,,12.9
-Strain-Japan R-XVI,Accredited,24.6,0,10826,58,,,,,,,98.3
-Sullivan C-2,Accredited,50.4,27.6,9851,2055,0.3,0.3,0.6,,3.6,1,94
-Sunrise R-IX,Accredited,47.1,0,8558,327,,,3.4,,4,,92.7
-Troy R-III,Accredited,33.7,29.6,9437,6330,0.1,0.5,2.2,,4.5,4.8,87.9
-Union R-XI,Accredited,45.8,22.4,9487,3177,0.2,0.5,1.7,,2.5,2.9,92.2
-University City,Accredited,100,33,15469,2508,,1,79.1,,4.6,4,11.2
-Valley Park,Accredited,40.7,40.5,12989,871,,3.6,20.3,,6.4,5.7,63.3
-Warren County R-III,Accredited,50,20.8,10545,3018,0.4,0.2,3.3,,5.6,5.6,84.9
-Washington,Accredited,30.8,27.9,11253,3923,0.2,0.6,0.5,,1.8,2.9,94.1
-Webster Groves,Accredited,13.9,71,12381,4484,0.2,1.4,12,,3.8,5.4,77.2
-Wentzville R-IV,Accredited,16.7,43.8,10488,17323,0.2,2,6.8,0,5.1,4.4,81.5
-Windsor C-1,Accredited,34.3,26.7,9322,2892,,0.4,2.4,,3.6,2.7,90.8
-Winfield R-IV,Accredited,45.1,21.6,9277,1521,,,1.2,,2.2,3.7,92.5
-Wright City R-II,Accredited,43.7,18,11243,1654,,,3.3,,11.9,5.9,78.7
+DISTRICT_N,accred_status,perc_frl,perc_college,spending_per_stud,num_students,perc_na,perc_asian,perc_black,perc_pi,perc_hisp,perc_multi,perc_white,story
+Affton 101,Accredited,33.60,45,10671,2587,,2.90,9.30,,6.30,7.90,73.60,
+Bayless,Accredited,62.30,30.80,10394,1715,,12.50,12.20,,5.20,4.40,65.70,
+Brentwood,Accredited,23.90,67.70,19111,768,,6.60,17.70,,5.30,8.30,61.80,
+Clayton,Accredited,9.30,76.70,18343,2618,,12.90,14.70,,4.40,6.90,61.00,
+Crystal City 47,Accredited,43.70,19.00,10122,496,,1.40,8.30,,1.60,,88.30,
+Desoto 73,Accredited,45.50,22.20,9429,2587,0.20,,1.70,,1.40,0.90,95.60,
+Dunklin R-V,Accredited,49.80,12.00,11374,1481,,1.10,3.10,,2.50,3.50,89.50,
+Elsberry R-II,Accredited,48.50,45.50,9564,787,,,2.70,,3.80,4.10,88.80,
+Ferguson Florissant R-II,Accredited,100.00,26.50,13144,9473,0.10,0.20,83.00,,3.60,5.00,8.10,
+Festus R-VI,Accredited,35.90,28.60,9085,3096,0.20,0.80,3.10,,1.30,6.90,87.70,
+Fort Zumwalt R-II,Accredited,19.90,48.80,11801,17518,0.10,3.60,6.30,0.10,5.90,5.70,78.20,
+Fox C-6,Accredited,28.80,31.80,9249,11150,0.10,1.20,1.40,0.10,3.10,3.20,90.80,
+Francis Howell R-III,Accredited,16.10,51.90,11463,16756,0.20,4.10,6.90,0.10,4.70,4.60,79.40,
+Franklin County R-II,Accredited,30.50,0.00,12114,119,,,,,,,95.00,
+Grandview R-II,Accredited,45.20,17.00,11281,4101,0.30,0.70,50.50,,23.20,5.10,20.10,
+Hancock Place,Accredited,99.90,25.00,11718,1412,,1.30,22.10,,7.00,10.40,58.90,
+Hazelwood R-I,Accredited,65.20,33.20,11007,16589,0.20,0.90,80.10,0.20,2.20,2.00,14.30,
+Hillsboro R-III,Accredited,33.40,25.40,9269,3428,0.30,0.30,0.40,,2.10,1.50,95.40,
+Jefferson County R-VII,Accredited,29.10,37.10,11138,129,,,,,,,100.00,
+Jennings,Accredited,100.00,29.70,10689,2429,,,98.80,,0.50,,0.30,
+Kirkwood R-VII,Accredited,11.00,67.60,11148,5864,0.10,1.70,9.30,,4.40,5.30,79.10,
+Ladue,Accredited,10.00,80.40,13361,4236,0.10,16.80,15.00,,5.10,6.80,56.20,
+Lindbergh R-VIII,Accredited,13.10,58.40,9576,7085,,4.30,2.20,,4.30,4.20,84.80,
+Lonedell R-XIV,Accredited,44.90,0.00,10192,283,,,3.20,,,3.50,93.30,
+Maplewood-Richmond Heights,Accredited,32.50,52.00,12785,1438,,1.80,17.60,,5.40,10.80,64.20,
+Mehlville R-IX,Accredited,27.20,40.40,9592,9963,0.20,3.80,7.70,0.20,3.80,4.00,80.30,
+Meramec Valley R-III,Accredited,48.50,32.70,10952,2909,0.50,0.60,1.60,,4.10,3.50,89.60,
+New Haven,Accredited,36.30,26.10,9934,489,,,,,4.10,3.90,91.80,
+Normandy,Provisionally Accredited,98.80,23.80,13713,2987,0.20,,93.00,,2.50,2.50,1.70,
+Northwest R-I,Accredited,39.60,24.30,9855,6030,0.20,0.60,1.10,0.10,3.30,3.10,91.60,
+Orchard Farm R-V,Accredited,32.00,38.20,12841,1942,0.30,1.00,8.00,,7.70,4.70,78.20,
+Parkway C-2,Accredited,18.50,67.90,12490,17525,0.30,13.30,15.70,0.00,5.30,5.80,59.60,
+Pattonville R-III,Accredited,45.70,43.10,14040,6007,0.20,3.90,32.60,0.10,13.30,8.30,41.50,
+Ritenour,Accredited,20.80,23.20,9690,6375,0.20,1.60,41.00,0.10,22.80,8.50,25.80,
+Riverview Gardens,Provisionally Accredited,99.90,11.40,9207,5414,,0.30,97.50,,1.10,,1.00,
+Rockwood R-VI,Accredited,13.30,73.40,10509,20998,0.20,9.00,7.90,0.10,3.70,3.40,75.70,
+Silex R-I,Accredited,35.80,34.40,8342,422,,,,,,1.40,97.20,
+Spring Bluff R-XV,Accredited,21.90,0.00,9754,196,,,,,,,98.00,
+Saint Charles R-VI,Accredited,39.20,40.30,14499,4742,0.10,2.00,13.50,0.10,10.30,5.40,68.60,
+Saint Clair R-XIII,Accredited,49.60,20.80,9869,2107,0.20,,1.20,,0.80,4.30,93.30,
+Saint Louis City,Accredited,100.00,32.00,15562,19222,0.10,2.80,78.50,,5.70,,12.90,"Founded in 1838, the St. Louis Public School District now serves 22,972 children and the many families they represent in grade levels preschool through 12th grade. For the 2021 school year, the district comprises 74 public schools over 86.8 square miles. Minority enrollment is 87% of the student body, which is more than the Missouri public school average of 29%. The school district graduation rate of 78% has increased from 68% over the last five school years, and in the classroom, the student teacher ratio is 12:1. In June of 2007, the district lost accreditation due to poor standardized test scores, mismanagement of finances, declining attendance/graduation rates, and unstable leadership. After a rigorous ten years of growth, investment, and change, the district was able to regain full accreditation in January 2017. The district offers 30 specialty magnet schools, early childhood education, ESOL programs, and career and college readiness."
+Strain-Japan R-XVI,Accredited,24.60,0.00,10826,58,,,,,,,98.30,
+Sullivan C-2,Accredited,50.40,27.60,9851,2055,0.30,0.30,0.60,,3.60,1.00,94.00,
+Sunrise R-IX,Accredited,47.10,0.00,8558,327,,,3.40,,4.00,,92.70,
+Troy R-III,Accredited,33.70,29.60,9437,6330,0.10,0.50,2.20,,4.50,4.80,87.90,
+Union R-XI,Accredited,45.80,22.40,9487,3177,0.20,0.50,1.70,,2.50,2.90,92.20,
+University City,Accredited,100.00,33.00,15469,2508,,1.00,79.10,,4.60,4.00,11.20,
+Valley Park,Accredited,40.70,40.50,12989,871,,3.60,20.30,,6.40,5.70,63.30,
+Warren County R-III,Accredited,50.00,20.80,10545,3018,0.40,0.20,3.30,,5.60,5.60,84.90,
+Washington,Accredited,30.80,27.90,11253,3923,0.20,0.60,0.50,,1.80,2.90,94.10,
+Webster Groves,Accredited,13.90,71.00,12381,4484,0.20,1.40,12.00,,3.80,5.40,77.20,
+Wentzville R-IV,Accredited,16.70,43.80,10488,17323,0.20,2.00,6.80,0.00,5.10,4.40,81.50,
+Windsor C-1,Accredited,34.30,26.70,9322,2892,,0.40,2.40,,3.60,2.70,90.80,
+Winfield R-IV,Accredited,45.10,21.60,9277,1521,,,1.20,,2.20,3.70,92.50,
+Wright City R-II,Accredited,43.70,18.00,11243,1654,,,3.30,,11.90,5.90,78.70,

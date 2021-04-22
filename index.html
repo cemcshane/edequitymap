@@ -26,37 +26,45 @@
         </header>
         <div class="container">
             <div class="row justify-content-center">
-                <div id="map" class="col-12 col-md-9"></div>
-                <div class="col-12 col-md-3">
-                    <h4>Color by:</h4>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="indicator" id="perc_frl" checked>
-                        <label class="form-check-label" for="perc_frl">
-                            Percent of students on free reduced lunch
-                        </label>
+                <div id="map" class="col-12 col-md-8"></div>
+                <div class="col-12 col-md-4">
+                    <div id="story">
+                        <a id="x-out">✕</a>
+                        <div id="story-content"></div>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="indicator" id="perc_college">
-                        <label class="form-check-label" for="perc_college">
-                            Percent of students entering a 4 year college/university
-                        </label>
+                    <div>
+                        <h4>Color by:</h4>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="indicator" id="perc_frl" checked>
+                            <label class="form-check-label" for="perc_frl">
+                                Percent of students on free reduced lunch
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="indicator" id="perc_college">
+                            <label class="form-check-label" for="perc_college">
+                                Percent of students entering a 4 year college/university
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="indicator" id="spending_per_stud">
+                            <label class="form-check-label" for="spending_per_stud">
+                                Expenditures per student
+                            </label>
+                        </div>
+                        <!-- Add more fields using this format: -->
+                        <!-- 
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="indicator" id="[INDICATOR ID]">
+                            <label class="form-check-label" for="[INDICATOR ID]">
+                                [INDICATOR DESCRIPTION]
+                            </label>
+                        </div> 
+                        -->
+                        <div id="legend">
+                            <h5>Legend</h5>
+                        </div>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="indicator" id="spending_per_stud">
-                        <label class="form-check-label" for="spending_per_stud">
-                            Expenditures per student
-                        </label>
-                    </div>
-                    <!-- Add more fields using this format: -->
-                    <!-- <div class="form-check">
-                        <input class="form-check-input" type="radio" name="indicator" id="[INDICATOR ID]">
-                        <label class="form-check-label" for="[INDICATOR ID]">
-                            [INDICATOR DESCRIPTION]
-                        </label>
-                    </div> -->
-                    <div id="legend">
-                        <h5>Legend</h5>
-                    </div>                      
                 </div>
             </div>
         </div>

@@ -23,3 +23,28 @@ body {
 #legend {
     padding-top: 20px;
 }
+
+#story {
+    position: absolute;
+    font-size: 12px;
+    background-color: aliceblue;
+    z-index: 1;
+    padding-right: 7px;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 10px;
+    box-shadow: 0px 3px 10px 2px #d6d6d6;
+    border-radius: 10px;
+}
+
+#story-content {
+    padding-top: 10px;
+    padding-right: 15px;
+}
+
+#x-out {
+    float: right;
+    font-size: 12px;
+    color: gray;
+    cursor: pointer;
+}

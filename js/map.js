@@ -25,6 +25,7 @@ d3.csv('data/District_Properties.csv').then(function(properties) {
       ['perc_frl', [[0,100], ['#ffffe6', '#ffd4b2', '#ffa77e', '#ff7248', '#ff0000']]],
       ['perc_college', [[0,100], ['#ffffe6', '#ffd4b2', '#ffa77e', '#ff7248', '#ff0000']]],
       ['spending_per_stud', [[null, null], ['#ffffe6', '#ffd4b2', '#ffa77e', '#ff7248', '#ff0000']]]
+   // ['PROPERTY-ID', [[MIN, MAX], ['LIST', 'OF', 'COLOR', 'HEXES']]]
    ]);
 
    // Map demographics to their IDs from the .csv file
@@ -196,7 +197,7 @@ d3.csv('data/District_Properties.csv').then(function(properties) {
             $(popup).find('#perc_frl_display').text(data.perc_frl);
             $(popup).find('#perc_college_display').text(data.perc_college);
             $(popup).find('#spending_per_stud_display').text(numberWithCommas(data.spending_per_stud));
- 
+            // $(popup).find('#PROPERTY-ID_display').text(data.PROPERTY-ID);
             feature_num++;
 
             layer.bindPopup(popup.html());
@@ -213,11 +214,14 @@ d3.csv('data/District_Properties.csv').then(function(properties) {
             });
 
             layer.on('click', function() {
+               data = district_properties.get(feature.properties.DISTRICT_N);
                if(layer == clickedLayer) {
                   layer.setStyle({weight: 3});
                   clicked = false;
                   clickedLayer = null;
                   layer.closePopup();
+                  $('#story-content').text('');
+                  $('#story').hide();
                }
                else if (clicked) {
                   clickedLayer.setStyle({weight: 3});
@@ -225,12 +229,22 @@ d3.csv('data/District_Properties.csv').then(function(properties) {
                   layer.openPopup();
                   clickedLayer.closePopup();               
                   clickedLayer = layer;
+                  $('#story').hide();
+                  $('#story-content').text(data.story);
+                  if(data.story!='') {
+                     $('#story').show();
+                  }
                }
                else {
                   layer.setStyle({weight: 7});
                   clickedLayer = layer;
                   clicked = true;
                   layer.openPopup();
+                  $('#story').hide();
+                  $('#story-content').text(data.story);
+                  if(data.story!='') {
+                     $('#story').show();
+                  }
                }
             });
          },
@@ -261,5 +275,10 @@ d3.csv('data/District_Properties.csv').then(function(properties) {
          setLegend(indicator);
       });
       
+      //Hide story popup by default, allow users to close on click
+      $('#story').hide();
+      $('#x-out').click(function() {
+         $('#story').hide();
+      });
    });
 });
